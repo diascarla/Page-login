@@ -1,0 +1,23 @@
+.form-social{
+  display: flex;
+  gap: 24px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: var(--icon-color);
+    box-shadow: 0 4px 4px #0004;
+    transition: 0.5s;
+}
+
+.social-icon:hover{
+    background-color: var(--primary-color);
+    transform: translateY(-15%);
+    color: var(--text-color-light);
+}
