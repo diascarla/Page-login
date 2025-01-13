@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="./css/form-login/form-btn.css">
     <link rel="stylesheet" href="./css/overlay-container/overlay-container.css">
     <link rel="stylesheet" href="./css/overlay-container/overlay.css">
-    <link rel="stylesheet" href="./css/overlay-container/form-btn-light">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/mobile/mobile-text.css">
+
+    <title>Login</title>
 </head>
 <body>
 
     <main>
-        <div class="login-container">
+        <div class="login-container" id="login-container">
             <div class="form-container">
                 <form class="form form-login">
                     <h2 class="form-title">Entrar com</h2>
@@ -46,12 +47,16 @@
                     <div class="form-input-container">
                         <input type="email" class="form-input" placeholder="Email">
 
-                        <input type="password" class="form-input" placeholder="senha">
+                        <input type="password" class="form-input" placeholder="Senha">
                     </div>
 
                     <a href="#" class="form-link">Esqueceu a senha?</a>
 
-                    <button class="form-btn">LOGAR</button>
+                    <button type="button" class="form-btn">LOGAR</button>
+
+                    <p class="mobile-text">Não tem conta? 
+                        <a href="#" id="open-register-mobile">Registre-se</a>
+                    </p>
                 </form>
 
                 <form class="form form-register">
@@ -78,25 +83,35 @@
                         <input type="password" class="form-input" placeholder="Senha">
                     </div>
 
-                    <button class="form-btn">Cadastrar</button>
+                    <button type="button" class="form-btn" id="form-btn">Cadastrar</button>
+                    
+                    <p class="mobile-text">Já tem conta? 
+                        <a href="#" id="open-login-mobile">Login</a>
+                    </p>
                 </form>
             </div>
 
             <div class="overlay-container">
-                <div class="overlay">1111000
+                <div class="overlay">
+                    <h2 class="form-title light">Já tem conta?</h2>
 
+                    <p class="form-text-light">Para entrar em nossa plataforma faça login com sua informações</p>
+
+                    <button type="button" class="form-btn form-btn-light" id="open-login">Entrar</button>
                 </div>
 
                 <div class="overlay">
                     <h2 class="form-title light">Olá Aluno!</h2>
 
-                    <p class="form-text light">Cadatre-se e comece a usar nossa plataforma on-line</p>
+                    <p class="form-text-light">Cadatre-se e comece a usar nossa plataforma on-line</p>
 
-                    <button class="form-btn-light">Cadastrar</button>
+                    <button type="button" class="form-btn form-btn-light" id="open-register">Cadastrar</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="./js/index.js"></script>
     
 </body>
 </html>

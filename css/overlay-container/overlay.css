@@ -6,6 +6,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     background-color: var(--primary-color);
+    transition: 1s;
+}
+
+.login-container.move .overlay:nth-child(2){
+    opacity: 0;
+    z-index: -1;
 }
