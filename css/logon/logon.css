@@ -1,0 +1,24 @@
+.container-logon{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.p{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 80px;
+}
+
+.name-student{
+    font-size: 1.5rem;
+    column-rule: var(--primary-color);
+    padding: 60px;
+}
+
+.message{
+    font-size: 1.3rem;
+}

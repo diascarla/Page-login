@@ -11,3 +11,27 @@
     border-style: none;
     background-color: var(--icon-color);
 }
+
+.alert{
+    opacity: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#required-alert{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.mandatory{
+    border: 2px solid var(--primary-color);
+}
+
+.filled{
+    border: 2px solid #3CCC87;
+}
+
+.appears{
+    opacity: 1;
+}

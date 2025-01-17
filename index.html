@@ -23,12 +23,12 @@
 
     <title>Login</title>
 </head>
-<body>
+<body> 
 
     <main>
         <div class="login-container" id="login-container">
             <div class="form-container">
-                <form class="form form-login">
+                <form class="form form-login" id="form-login">
                     <h2 class="form-title">Entrar com</h2>
                     <div class="form-social">
                         <a href="#" class="social-icon">
@@ -45,21 +45,27 @@
                     <p class="form-texto">ou utilize a conta</p>
 
                     <div class="form-input-container">
-                        <input type="email" class="form-input" placeholder="Email">
 
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <input type="email" class="form-input required-login" placeholder="Email" id="email-login">
+
+                        <p class="alert">* campo obrigatótio</p>
+
+                        <input type="password" class="form-input required-login" placeholder="Senha" id="senha-login">
+
+                        <p class="alert">* campo obrigatótio</p>
+
                     </div>
 
                     <a href="#" class="form-link">Esqueceu a senha?</a>
 
-                    <button type="button" class="form-btn">LOGAR</button>
+                    <button type="button" class="form-btn" onclick="login()">LOGAR</button>
 
                     <p class="mobile-text">Não tem conta? 
                         <a href="#" id="open-register-mobile">Registre-se</a>
                     </p>
                 </form>
 
-                <form class="form form-register">
+                <form class="form form-register" id="form-register">
                     <h2 class="form-title">Criar Conta</h2>
                     <div class="form-social">
                         <a href="#" class="social-icon">
@@ -76,14 +82,22 @@
                     <p class="form-texto">ou cadastre seu email</p>
 
                     <div class="form-input-container">
-                        <input type="email" class="form-input" placeholder="Email">
 
-                        <input type="text" class="form-input" placeholder="Nome">
+                        <input type="email" class="form-input" placeholder="Email" id="required-email">
 
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <p id="required-alert"></p>
+
+                        <input type="text" class="form-input required-register" placeholder="Nome" id="name">
+
+                        <p class="alert">* Campo obrigatótio</p>
+
+                        <input type="password" class="form-input required-register" placeholder="Senha" id="senha">
+
+                        <p class="alert">* Campo obrigatótio</p>
+
                     </div>
 
-                    <button type="button" class="form-btn" id="form-btn">Cadastrar</button>
+                    <button type="button" class="form-btn btn-register" id="form-btn" onclick="valueInput()" onclick="info()">Cadastrar</button>
                     
                     <p class="mobile-text">Já tem conta? 
                         <a href="#" id="open-login-mobile">Login</a>
@@ -112,6 +126,7 @@
     </main>
 
     <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
     
 </body>
 </html>
