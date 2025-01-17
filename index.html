@@ -7,19 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/globals/reset.css">
-    <link rel="stylesheet" href="./css/globals/variables.css">
-    <link rel="stylesheet" href="./css/containers/main.css">
-    <link rel="stylesheet" href="./css/form-login/login-container.css">
-    <link rel="stylesheet" href="./css/containers/form-container.css">
-    <link rel="stylesheet" href="./css/containers/form.css">
-    <link rel="stylesheet" href="./css/form-login/form-title.css">
-    <link rel="stylesheet" href="./css/form-login/form-social.css">
-    <link rel="stylesheet" href="./css/form-login/form-input-container.css">
-    <link rel="stylesheet" href="./css/form-login/form-btn.css">
-    <link rel="stylesheet" href="./css/overlay-container/overlay-container.css">
-    <link rel="stylesheet" href="./css/overlay-container/overlay.css">
-    <link rel="stylesheet" href="./css/mobile/mobile-text.css">
+    <link rel="stylesheet" href="./src/css/globals/reset.css">
+    <link rel="stylesheet" href="./src/css/globals/variables.css">
+    <link rel="stylesheet" href="./src/css/containers/main.css">
+    <link rel="stylesheet" href="./src/css/form-login/login-container.css">
+    <link rel="stylesheet" href="./src/css/containers/form-container.css">
+    <link rel="stylesheet" href="./src/css/containers/form.css">
+    <link rel="stylesheet" href="./src/css/form-login/form-title.css">
+    <link rel="stylesheet" href="./src/css/form-login/form-social.css">
+    <link rel="stylesheet" href="./src/css/form-login/form-input-container.css">
+    <link rel="stylesheet" href="./src/css/form-login/form-btn.css">
+    <link rel="stylesheet" href="./src/css/overlay-container/overlay-container.css">
+    <link rel="stylesheet" href="./src/css/overlay-container/overlay.css">
+    <link rel="stylesheet" href="./src/css/mobile/mobile-text.css">
 
     <title>Login</title>
 </head>
@@ -42,15 +42,15 @@
                         </a>
                     </div>
 
-                    <p class="form-texto">ou utilize a conta</p>
+                    <p class="form-text">ou utilize a conta</p>
 
                     <div class="form-input-container">
 
-                        <input type="email" class="form-input required-login" placeholder="Email" id="email-login">
+                        <input type="email" class="form-input required-login" placeholder="Email" id="email-login" autocomplete="off">
 
                         <p class="alert">* campo obrigatótio</p>
 
-                        <input type="password" class="form-input required-login" placeholder="Senha" id="senha-login">
+                        <input type="password" class="form-input required-login" placeholder="Senha" id="senha-login" autocomplete="off">
 
                         <p class="alert">* campo obrigatótio</p>
 
@@ -79,25 +79,25 @@
                         </a>
                     </div>
 
-                    <p class="form-texto">ou cadastre seu email</p>
+                    <p class="form-text">ou cadastre seu email</p>
 
                     <div class="form-input-container">
 
-                        <input type="email" class="form-input" placeholder="Email" id="required-email">
+                        <input type="email" class="form-input" placeholder="Email" id="required-email" autocomplete="off">
 
                         <p id="required-alert"></p>
 
-                        <input type="text" class="form-input required-register" placeholder="Nome" id="name">
+                        <input type="text" class="form-input required-register" placeholder="Nome" id="name" autocomplete="off">
 
                         <p class="alert">* Campo obrigatótio</p>
 
-                        <input type="password" class="form-input required-register" placeholder="Senha" id="senha">
+                        <input type="password" class="form-input required-register" placeholder="Senha" id="senha" autocomplete="off">
 
                         <p class="alert">* Campo obrigatótio</p>
 
                     </div>
 
-                    <button type="button" class="form-btn btn-register" id="form-btn" onclick="valueInput()" onclick="info()">Cadastrar</button>
+                    <button type="button" class="form-btn btn-register" id="form-btn" onclick="valueInput()" >Cadastrar</button>
                     
                     <p class="mobile-text">Já tem conta? 
                         <a href="#" id="open-login-mobile">Login</a>
@@ -125,8 +125,8 @@
         </div>
     </main>
 
-    <script src="./js/index.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/login.js"></script>
     
 </body>
 </html>

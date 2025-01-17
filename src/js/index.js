@@ -1,8 +1,10 @@
-const moveOverlay = () => loginContainer.classList.toggle('move')
-document.getElementById('open-register').addEventListener('click', moveOverlay)
-document.getElementById('open-login').addEventListener('click', moveOverlay)
-document.getElementById('open-register-mobile').addEventListener('click', moveOverlay)
-document.getElementById('open-login-mobile').addEventListener('click', moveOverlay)
+const moveOverlay = () => loginContainer.classList.toggle('move');
+document.getElementById('open-register').addEventListener('click', moveOverlay);
+document.getElementById('open-login').addEventListener('click', moveOverlay);
+document.getElementById('open-register-mobile').addEventListener('click', moveOverlay);
+document.getElementById('open-login-mobile').addEventListener('click', moveOverlay);
+
+const loginError = document.querySelector(".form-link");
 
 
 
@@ -22,6 +24,7 @@ function valueInput(){
     const inputSenha = valueInputSenha.value
 
     console.log(inputEmail, inputName, inputSenha)
+    info()
 }
 
 function info(){
@@ -46,10 +49,10 @@ function login(){
     console.log(valueInputEmailLogin, valueInputSenhaLogin)
 
     if(valueInputEmailLogin == true && valueInputSenhaLogin == true){
-       window.location.href="https://www.google.com.br/?hl=pt-BR"
-       document.querySelector('.name-student').innerHTML = `${nome}`
+       window.location.href="./logon.html"
+
     }else{ 
-        document.querySelector(".res"). innerHTML = `Login ou Senha incorreto.`
+        loginError.innerHTML = `Login ou Senha incorreto`
+        loginError.style.color = " #ff3131"
     }
 }
-
