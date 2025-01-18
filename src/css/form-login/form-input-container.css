@@ -13,7 +13,7 @@
 }
 
 .alert{
-    opacity: 0;
+    display: none;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--primary-color);
@@ -33,5 +33,6 @@
 }
 
 .appears{
-    opacity: 1;
+    display: block;
 }
+

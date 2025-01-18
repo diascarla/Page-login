@@ -15,6 +15,7 @@ btnLogin.addEventListener('click', (event) =>{
 
     inputLogin.forEach((item) => {
 
+
         if (item.value !== "") {
             item.classList.remove("mandatory");
             item.classList.add("filled");

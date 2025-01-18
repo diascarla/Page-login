@@ -16,3 +16,25 @@
 .message{
     font-size: 1.3rem;
 }
+
+@media (max-width: 480px){
+    .login-container{
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .login-container{
+        background-color: var(--primary-color);
+    }
+
+    .p{
+        color: var(--secundary-color);
+    }   
+
+    .message{
+        color: var(--secundary-color);
+    } 
+}
