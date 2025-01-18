@@ -4,7 +4,7 @@ Página de login desenvolvida  através do Canal do Fernando Leonid no YouTube.
 Na página há vários layouts onde o usuário pode fazer o login ou cadastro. Caso o usuário clique no botão Cadastrar o layout muda para que o usuário possa fazer o cadastro, onde é pedido o e-mail, nome e senha. Caso o usuário aperte o botão entrar o layout muda novamente para que o usuário posso digitar seu usuário e senha para entrar na plataforma.
 ## Layout
 ### Mobile
-<img src= './src/image/iPhone-14-Pro-438x891.png'>
+<img src= './src/image/iphone.png'>
 
 ### IPad
 <img src= './src/image/ipad.png'>
